@@ -3,22 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>css（一） | Shuang`s blog</title>
+  <title>css（一） | 沈双双的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
-<meta name="keywords" content="Vue">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css（一）">
-<meta property="og:url" content="http://yoursite.com/2019/04/11/css-BFC/index.html">
-<meta property="og:site_name" content="Shuang`s blog">
+<meta property="og:url" content="https://yoursite.com/2019/04/11/css-BFC/index.html">
+<meta property="og:site_name" content="沈双双的博客">
 <meta property="og:description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-11T13:33:50.550Z">
+<meta property="og:updated_time" content="2019-04-13T06:47:30.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css（一）">
 <meta name="twitter:description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
   
-    <link rel="alternate" href="/atom.xml" title="Shuang`s blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="沈双双的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -44,8 +44,8 @@
     <h3 class="description"></h3>
     <div class="count-box">
       <a href="/archives"><div><strong>3</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>0</strong><br>标签</div></a>
+      <a href="/categories"><div><strong>1</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
      
@@ -92,8 +92,19 @@
 
         <div>
           
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+  </div>
+
           
               
+  &nbsp; | &nbsp;
+  <div class="view-box">
+    <span id="/2019/04/11/css-BFC/" class="leancloud_visitors" data-flag-title="css（一）">
+      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
+    </span>
+  </div>
+
 
           
         </div>
@@ -109,9 +120,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/11/css-BFC/" data-id="cjuf2no4d00013cf2ljimhkdg" class="article-share-link">分享</a>
+      <a data-url="https://yoursite.com/2019/04/11/css-BFC/" data-id="cjuf47fde000018f26ossbmba" class="article-share-link">分享</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
     </footer>
   </div>
   
@@ -147,7 +160,7 @@
     <div class="widget-wrap">
   <h3 class="widget-title"></h3>
   <div class="widget">
-    <h1 class="blog-title">Shuang`s blog</h1>
+    <h1 class="blog-title">沈双双的博客</h1>
     <h2 class="blog-subtitle"></h2>
     <ul class="blog-link">
      
@@ -180,8 +193,8 @@
     <h3 class="description"></h3>
     <div class="count-box">
       <a href="/archives"><div><strong>3</strong><br>文章</div></a>
-      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>0</strong><br>标签</div></a>
+      <a href="/categories"><div><strong>1</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
     </div>
 
 
@@ -286,6 +299,115 @@ new WOW().init();
   </ul>
 </section>
 <script src="/js/script.js"></script>
+
+
+
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("22j2EPADMCJkoTt3cCouAFqH-gzGzoHsz", "JVdguPz69cynykPD4PbGJVMw");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.article-title').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
 
 
