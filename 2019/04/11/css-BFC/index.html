@@ -3,20 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Hello World | Shuang`s blog</title>
+  <title>css（一） | Shuang`s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/hello-world/index.html">
+<meta property="og:title" content="css（一）">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/css-BFC/index.html">
 <meta property="og:site_name" content="Shuang`s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-10T12:45:35.835Z">
+<meta property="og:updated_time" content="2019-04-11T13:33:50.550Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="css（一）">
+<meta name="twitter:description" content="CSS盒模型是什么1、包含content、padding、border、margin几个要素2、分为标准盒模型和IE盒模型">
   
     <link rel="alternate" href="/atom.xml" title="Shuang`s blog" type="application/atom+xml">
   
@@ -69,12 +69,12 @@
   </div>
 </div>
 
-        <section id="main"><article id="post-hello-world" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-css-BFC" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/04/10/hello-world/" class="article-date">
-  <time class="post-time" datetime="2019-04-10T12:45:35.835Z" itemprop="datePublished">
+    <a href="/2019/04/11/css-BFC/" class="article-date">
+  <time class="post-time" datetime="2019-04-11T08:16:17.000Z" itemprop="datePublished">
     <span class="post-month">4月</span><br>
-    <span class="post-day">10</span>
+    <span class="post-day">11</span>
   </time>
 </a>
    
@@ -86,7 +86,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      css（一）
     </h1>
   
 
@@ -101,20 +101,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="CSS盒模型是什么"><a href="#CSS盒模型是什么" class="headerlink" title="CSS盒模型是什么"></a>CSS盒模型是什么</h3><p>1、包含content、padding、border、margin几个要素<br>2、分为标准盒模型和IE盒模型<br><a id="more"></a></p>
+<h3 id="标准盒模型和IE盒模型的区别"><a href="#标准盒模型和IE盒模型的区别" class="headerlink" title="标准盒模型和IE盒模型的区别"></a>标准盒模型和IE盒模型的区别</h3><p>1、标准盒模型：宽、高只是content的宽、高<br>2、IE盒模型：宽/高 = content+padding+border</p>
+<h3 id="CSS如何设置两种类型"><a href="#CSS如何设置两种类型" class="headerlink" title="CSS如何设置两种类型"></a>CSS如何设置两种类型</h3><p>1、标准盒模型：box-sizing：content-box；<br>2、IE盒模型：  box-sizing：border-box；</p>
+<h3 id="JS如何获取盒模型的宽、高"><a href="#JS如何获取盒模型的宽、高" class="headerlink" title="JS如何获取盒模型的宽、高"></a>JS如何获取盒模型的宽、高</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dom.style.width/height (只能获取内联样式宽、高)</span><br><span class="line">dom.currenStyle.width/height (获取渲染后的宽、高，但只支持IE)</span><br><span class="line">window.getComputedStyle(dom).width/height (渲染后的宽、高，支持火狐、chrome等)</span><br><span class="line">dom.getBoundingClientRect().width/height</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/10/hello-world/" data-id="cjudfuty60004asf23lyfw9cy" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2019/04/11/css-BFC/" data-id="cjudfutx40001asf2cccsmmf7" class="article-share-link">分享</a>
       
       
     </footer>
@@ -123,15 +118,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/04/11/css-BFC/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/04/11/BFC原理/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          css（一）
+          BFC原理
         
       </div>
     </a>
   
+  
+    <a href="/2019/04/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
 </nav>
 
