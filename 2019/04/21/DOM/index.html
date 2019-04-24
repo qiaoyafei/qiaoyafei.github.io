@@ -3,16 +3,20 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>沈双双的博客</title>
+  <title>DOM | 沈双双的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="沈双双、blog、web、vue、app">
-<meta property="og:type" content="website">
-<meta property="og:title" content="沈双双的博客">
-<meta property="og:url" content="https://yoursite.com/index.html">
+  <meta name="description" content="DOM事件 事件处理程序： 事件就是用户或者浏览器自身执行的某种动作。如click、load等都是事件的名字。而相应某个事件的函数就叫做事件处理程序 DOM事件级别 DOM0 HTML标签上添加click事件      element.onclick = function(){}  DOM2 事件处理      element.addEventListener(‘click’,function()">
+<meta name="keywords" content="Javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOM">
+<meta property="og:url" content="https://yoursite.com/2019/04/21/DOM/index.html">
 <meta property="og:site_name" content="沈双双的博客">
+<meta property="og:description" content="DOM事件 事件处理程序： 事件就是用户或者浏览器自身执行的某种动作。如click、load等都是事件的名字。而相应某个事件的函数就叫做事件处理程序 DOM事件级别 DOM0 HTML标签上添加click事件      element.onclick = function(){}  DOM2 事件处理      element.addEventListener(‘click’,function()">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-21T12:12:12.072Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="沈双双的博客">
+<meta name="twitter:title" content="DOM">
+<meta name="twitter:description" content="DOM事件 事件处理程序： 事件就是用户或者浏览器自身执行的某种动作。如click、load等都是事件的名字。而相应某个事件的函数就叫做事件处理程序 DOM事件级别 DOM0 HTML标签上添加click事件      element.onclick = function(){}  DOM2 事件处理      element.addEventListener(‘click’,function()">
   
     <link rel="alternate" href="/atom.xml" title="沈双双的博客" type="application/atom+xml">
   
@@ -65,9 +69,7 @@
   </div>
 </div>
 
-        <section id="main">
-  
-    <article id="post-DOM" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-DOM" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/21/DOM/" class="article-date">
   <time class="post-time" datetime="2019-04-21T08:28:12.000Z" itemprop="datePublished">
@@ -83,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/21/DOM/">DOM</a>
+    <h1 class="article-title" itemprop="name">
+      DOM
     </h1>
   
 
@@ -131,208 +133,21 @@ event.stoplmmediatePropagation()
     </footer>
   </div>
   
-</article>
-
-
-
-
-  
-    <article id="post-BFC原理" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/11/BFC原理/" class="article-date">
-  <time class="post-time" datetime="2019-04-11T13:33:08.000Z" itemprop="datePublished">
-    <span class="post-month">4月</span><br>
-    <span class="post-day">11</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
     
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/11/BFC原理/">BFC原理</a>
-    </h1>
   
+    <a href="/2019/04/11/BFC原理/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">BFC原理</div>
+    </a>
+  
+</nav>
 
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
-  </div>
-
-          
-              
-  &nbsp; | &nbsp;
-  <div class="view-box">
-    <span id="/2019/04/11/BFC原理/" class="leancloud_visitors" data-flag-title="BFC原理">
-      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
-    </span>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="BFC是什么"><a href="#BFC是什么" class="headerlink" title="BFC是什么"></a>BFC是什么</h3><p><strong>FC：</strong> 即<em>Formatting context</em> 它是页面中的一块渲染区域，并且有一套渲染规则，它决定了其子元素将如何定位，以及和其他元素的关系和相互作用<br><strong>B：</strong>即<em>Box</em>，盒模型css的基本单位。  不同类型的 Box， 会参与不同的 Formatting Context<br> block-level box:display 属性为 block, list-item, table 的元素，会生成 block-level box。并且参与 block fomatting context； inline-level box:display 属性为 inline, inline-block, inline-table 的元素，会生成 inline-level box。并且参与 inline formatting context；<br>
-        
-          </p><p class="article-more-link">
-            <a href="/2019/04/11/BFC原理/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yoursite.com/2019/04/11/BFC原理/" data-id="cjuqtfox600002sf205cb7cof" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-
-
-  
-    <article id="post-css-BFC" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/11/css-BFC/" class="article-date">
-  <time class="post-time" datetime="2019-04-11T08:16:17.000Z" itemprop="datePublished">
-    <span class="post-month">4月</span><br>
-    <span class="post-day">11</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/11/css-BFC/">css（一）</a>
-    </h1>
-  
-
-        <div>
-          
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
-  </div>
-
-          
-              
-  &nbsp; | &nbsp;
-  <div class="view-box">
-    <span id="/2019/04/11/css-BFC/" class="leancloud_visitors" data-flag-title="css（一）">
-      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
-    </span>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="CSS盒模型是什么"><a href="#CSS盒模型是什么" class="headerlink" title="CSS盒模型是什么"></a>CSS盒模型是什么</h3><p>1、包含content、padding、border、margin几个要素<br>2、分为标准盒模型和IE盒模型<br>
-        
-          </p><p class="article-more-link">
-            <a href="/2019/04/11/css-BFC/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yoursite.com/2019/04/11/css-BFC/" data-id="cjuqtfoxk00062sf2u2xvq0v1" class="article-share-link">分享</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-hello-world" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/10/hello-world/" class="article-date">
-  <time class="post-time" datetime="2019-04-10T12:45:35.835Z" itemprop="datePublished">
-    <span class="post-month">4月</span><br>
-    <span class="post-day">10</span>
-  </time>
-</a>
-   
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/04/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div>
-          
-          
-              
-  &nbsp; | &nbsp;
-  <div class="view-box">
-    <span id="/2019/04/10/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
-    </span>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://yoursite.com/2019/04/10/hello-world/" data-id="cjuqtfoxl00072sf2um7hlc2h" class="article-share-link">分享</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-
-  
 
 </section>
         
